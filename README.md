@@ -2,14 +2,11 @@
 
 A new Flutter project.
 
-## Getting Started
+## Flutter ChatGPT
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+https://user-images.githubusercontent.com/88303791/212389144-05571fec-9a80-4b84-b514-d7118c15b413.mp4
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
