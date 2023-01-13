@@ -1,8 +1,12 @@
-# chatgpt
+# Flutter - ChatGPT API
 
 A new Flutter project.
 
 ## Flutter ChatGPT
+
+
+
+https://user-images.githubusercontent.com/88303791/212394282-0351c771-63b1-4bc1-b515-0c39c9877772.mp4
 
 
 
