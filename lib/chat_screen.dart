@@ -99,8 +99,8 @@ class _ChatScreenState extends State<ChatScreen> {
                       children: [
                         CircleAvatar(
                           backgroundColor: chat.type == ChatSender.bot
-                              ? Color(0xff2653FC)
-                              : Color(0xff535259),
+                              ? const Color(0xff2653FC)
+                              : const Color(0xff535259),
                           child: Text(
                             chat.type == ChatSender.bot ? "AI" : "You",
                             style: const TextStyle(
@@ -112,51 +112,52 @@ class _ChatScreenState extends State<ChatScreen> {
                           width: 20,
                         ),
                         Expanded(
-                            child: chat.type == ChatSender.user
-                                ? Container(
-                                    padding: const EdgeInsets.all(8.0),
-                                    decoration: const BoxDecoration(
-                                        gradient: LinearGradient(
-                                          colors: [
-                                            Color(0xff535259),
-                                            Color(0xffB5B1B2),
-                                          ],
-                                        ),
-                                        borderRadius: BorderRadius.only(
-                                          bottomLeft: Radius.circular(10.0),
-                                          topRight: Radius.circular(10.0),
-                                          topLeft: Radius.circular(10.0),
-                                        )),
-                                    child: Text(
-                                      chat.text!,
-                                      style: const TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  )
-                                : Container(
-                                    padding: const EdgeInsets.all(8.0),
-                                    decoration: const BoxDecoration(
-                                        gradient: LinearGradient(
-                                          colors: [
-                                            Color(0xff2653FC),
-                                            Color(0xff243DB1),
-                                          ],
-                                        ),
-                                        borderRadius: BorderRadius.only(
-                                          bottomRight: Radius.circular(10.0),
-                                          topRight: Radius.circular(10.0),
-                                          topLeft: Radius.circular(10.0),
-                                        )),
-                                    child: Text(
-                                      chat.text!,
-                                      style: const TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  )),
+                          child: chat.type == ChatSender.user
+                              ? Container(
+                                  padding: const EdgeInsets.all(8.0),
+                                  decoration: const BoxDecoration(
+                                      gradient: LinearGradient(
+                                        colors: [
+                                          Color(0xff535259),
+                                          Color(0xffB5B1B2),
+                                        ],
+                                      ),
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(10.0),
+                                        topRight: Radius.circular(10.0),
+                                        topLeft: Radius.circular(10.0),
+                                      )),
+                                  child: Text(
+                                    chat.text!,
+                                    style: const TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                )
+                              : Container(
+                                  padding: const EdgeInsets.all(8.0),
+                                  decoration: const BoxDecoration(
+                                      gradient: LinearGradient(
+                                        colors: [
+                                          Color(0xff2653FC),
+                                          Color(0xff243DB1),
+                                        ],
+                                      ),
+                                      borderRadius: BorderRadius.only(
+                                        bottomRight: Radius.circular(10.0),
+                                        topRight: Radius.circular(10.0),
+                                        topLeft: Radius.circular(10.0),
+                                      )),
+                                  child: Text(
+                                    chat.text!,
+                                    style: const TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                        ),
                       ],
                     ),
                   );
